@@ -1082,10 +1082,10 @@ h.addVelocity(-Math.sin(this.yaw) * g * .5, .1, -Math.cos(this.yaw) * g * .5);
 			chatdisablermsg = chatdisabler.addoption("Message", String, "youtube.com/c/7GrandDadVape");
 			new Module("FilterBypass", function() {});
 
-			const survival = new Module("SurvivalMode", function(callback) {
+			const creative = new Module("CreativeMode", function(callback) {
 				if (callback) {
-					if (player) player.setGamemode(GameMode.fromId("survival"));
-					survival.toggle();
+					if (player) player.setGamemode(GameMode.fromId("creative"));
+					creative.toggle();
 				}
 			});
 
